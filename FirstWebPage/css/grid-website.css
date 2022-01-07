@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: aqua;
+}
+
+.banner {
+    background-color: rgb(31, 187, 70);
+}
+
+.main-content {
+    background-color: rgb(21, 36, 36);
+}
+
+.form-main {
+    background-color: rgb(106, 32, 121);
+}
+
+.footer {
+    background-color: rgb(206, 74, 22);
+}
