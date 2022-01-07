@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -11,7 +12,37 @@
 } */
 
 .navbar {
-    background-color: aqua;
+    background-color: #3d5467;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+
+.logo {
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.menu {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 1.2rem;
+}
+
+.link {
+    padding: 1.6rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.link:hover {
+    background-color: #456075;
+}
+
+.link:active {
+    background-color: #4e6d85;
 }
 
 .banner {
