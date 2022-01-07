@@ -46,7 +46,7 @@
                             }
                             
                             .banner {
-                                background-image: url('https://i.picsum.photos/id/184/1300/500.jpg?hmac=ItPYxX2Z52ErBNWvLGy14AND-IYq42lovL9yh6KJFeQ');
+                                background-image: url('../img/1.jpg');
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 min-height: 400px;
@@ -117,7 +117,7 @@
                             }
                             
                             .form-main {
-                                background-image: url('https://i.picsum.photos/id/214/1300/500.jpg?hmac=enzD-D5YKlUlMUti08Nhdw3Oo9_34HNx60getYaZqE4');
+                                background-image: url('../img/2.jpg');
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 height: 400px;
@@ -195,7 +195,7 @@
                                 padding: 1rem;
                             }
                             
-                            @media all and (max-width: 1000px) {
+                            @media (max-width: 1000px) {
                                 .logo {
                                     font-size: 2.8rem;
                                 }
