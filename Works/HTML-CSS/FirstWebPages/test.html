@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .banner {
+            background-image: url('../FirstWebPages/img/1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 2rem;
+            height: 400px;
+        }
+
+        .banner-content {
+          
+            color: white;
+            width: 75%;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+          
+
+        }
+
+        .banner-content p{
+            width: 75%;
+            margin: auto;
+            font-size: 1.3rem;
+        }
+
+        .banner-content h2 {
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+
+        .flex-banner {
+            background-image: url('../FirstWebPages/img/1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+           
+        }
+
+        .flex-banner-content {
+            width: 75%;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         
+          
+           
+        }
+
+        .flex-banner-content p {
+            width: 75%;
+            font-size: 1.3rem;
+
+        }
+
+        .flex-banner-content h2 {
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+
+
+        .grid-banner {
+            background-image: url('../FirstWebPages/img/1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-rows: 400px;
+            margin-bottom: 1rem;
+          
+        }
+
+        .grid-banner-content {
+            width: 75%;
+            margin: auto;
+        }
+
+        .grid-banner-items { 
+            width: 75%;
+            margin: auto;
+            text-align: center;
+            color: white;
+            
+        }
+
+
+        .grid-banner p {
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+        }
+
+        .grid-banner h2 {
+            margin-bottom:1rem;
+            text-transform: uppercase;
+        }
+
+
+        .form-main {
+          
+            background-image: url('../FirstWebPages/img/2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+       
+        .form-items {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .form-items input, textarea {
+
+            width: 50%;
+            padding: 0.6rem;
+            margin-bottom: 0.4rem;
+
+        }
+
+
+
+        .grid-form-main {
+            background-color: yellowgreen;
+            padding: 3rem;
+
+        }
+
+        .grid-form-items {
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            width: 35%;
+            margin: auto;
+            padding: 1rem;
+
+        }
+
+        .grid-form-items input,  .grid-form-items textarea{
+          
+            margin-bottom: 0.6rem;
+            padding: 0.6rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-form-main">
+        <form action="" class="grid-form-items">
+          
+                <h2>Elaqe</h2>
+            <input type="text">
+            <input type="email">
+            <textarea name="" ></textarea>
+            <button>Gonder</button>
+          
+        </form>
+
+
+    </div>
+
+    <div class="form-main">
+        <form action="" class="form-items">
+          
+                <h2>Elaqe</h2>
+            <input type="text">
+            <input type="email">
+            <textarea name="" ></textarea>
+            <button>Gonder</button>
+          
+        </form>
+
+
+    </div>
+
+
+      
+    <div class="grid-banner">
+
+        <div class="grid-banner-content">
+           <div class="grid-banner-items">
+            <h2>Grid yol ile</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, exercitationem. Similique ipsam labore quis nihil neque unde et hic autem non voluptas facere, fugiat inventore, quia harum laudantium. Porro, cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, exercitationem. Similique ipsam labore quis nihil neque unde et hic autem non voluptas facere, fugiat inventore, quia harum laudantium.</p>
+           </div>
+        </div>
+
+    </div>
+
+   
+    <div class="flex-banner">
+
+        <div class="flex-banner-content">
+            <h2>Flex yol ile</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, exercitationem. Similique ipsam labore quis nihil neque unde et hic autem non voluptas facere, fugiat inventore, quia harum laudantium. Porro, cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, exercitationem. Similique ipsam labore quis nihil neque unde et hic autem non voluptas facere, fugiat inventore, quia harum laudantium.</p>
+        </div>
+
+    </div>
+    
+      
+    <div class="box banner">
+
+        <div class="banner-content">
+            <h2>Normal yol ile</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, exercitationem. Similique ipsam labore quis nihil neque unde et hic autem non voluptas facere, fugiat inventore, quia harum laudantium. Porro, cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, exercitationem. Similique ipsam labore quis nihil neque unde et hic autem non voluptas facere, fugiat inventore, quia harum laudantium.</p>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
