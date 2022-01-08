@@ -46,17 +46,163 @@
 }
 
 .banner {
-    background-color: rgb(31, 187, 70);
+    background-image: url('../img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 400px;
+    
+}
+
+.banner-content {
+    width: 75%;
+    margin: auto;
+    padding: 2rem; 
+}
+
+.banner-items {
+    width: 75%;
+    margin:auto;
+    color: white;
+    text-align: center;
+}
+
+.banner-content h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.banner-content p {
+    font-size: 1.3rem;
+   
 }
 
 .main-content {
-    background-color: rgb(21, 36, 36);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.item {
+    text-align: center;
+    width: 90%;
+    margin:auto;
+}
+
+.item h3 {
+    margin-bottom: .7rem;
+}
+
+.item button {
+    width: 25%;
+    padding: .5rem;
+    background-color: #3d5467;
+    border-radius: .2rem;
+    margin-top: 0.7rem;
+    border: 1px solid #3d5467;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color: #476379;
+}
+
+.item button:active {
+    background-color: #507088;
 }
 
 .form-main {
-    background-color: rgb(106, 32, 121);
+   background-image: url('../img/2.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: grid;
+   grid-template-rows: 400px;
+   
+}
+
+.form-items {
+  
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    
+
+}
+
+
+.form-items input, textarea {
+ 
+    margin-bottom: .7rem;
+    width: 40%;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+}
+
+.form-items h2 {
+   
+    margin-bottom: 1rem;
+   
+}
+
+.form-items button {
+    width: 12%;
+    padding: .5rem;
+    background-color: #3d5467;
+    border-radius: .2rem;
+    margin-top: 0.7rem;
+    border: 1px solid #3d5467;
+    outline: none;
+    color: white;
+    cursor: pointer;
+
+    
+}
+
+.form-items button:hover {
+    background-color: #476379;
+}
+
+.form-items button:active {
+    background-color: #507088;
 }
 
 .footer {
-    background-color: rgb(206, 74, 22);
+    background-color: #4f6c85;
+    display: grid;
+    grid-template-rows: 75px 50px;
+    color: white;
+   
 }
+
+.footer p {
+
+  margin-left:2rem;
+  margin-top:1rem;
+ 
+    
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:visited {
+    color: white;
+
+}
+
+.footer a:active {
+    color: white;
+
+}
+
+.footer a:focus {
+    color:white;
+}
+}
+
