@@ -190,6 +190,9 @@
                             .footer a:visited {
                                 color: white;
                             }
+                            .footer a:active {
+                                color: white;
+                            }
                             
                             .footer p {
                                 padding: 1rem;
