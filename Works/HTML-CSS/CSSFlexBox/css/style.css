@@ -1,0 +1,154 @@
+/* Css reset styles */
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* St container */
+.st-container {
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+/* St boxes */
+.st-box {
+    width: 250px; 
+    border-radius: .3rem;
+    margin: 0px 10px;
+  
+}
+
+/* St item1, item2 */
+.st-item1 , .st-item2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1rem 0 1rem .8rem ;
+   
+}
+
+/* St item1 h4 */
+.st-item1 h4 {
+    font-size: .7rem;
+    opacity: 80%;
+    margin-bottom: .4rem;
+}
+
+/* St item1 h3 */
+.st-item1 h3 {
+    font-weight: normal;
+}
+
+/* St item2 a */
+.st-item2 a {
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+/* St icon1, icon2 */
+.icon1, .icon2 {
+    margin-right: 1rem;
+}
+
+/* St icon1 */
+.icon1 {
+    opacity: 50%;
+}
+
+/* St icon2 */
+.icon2 {
+    cursor: pointer;
+}
+
+/* St icon2:hover */
+.icon2:hover {
+    transform: rotate(360deg);
+    transition: 500ms;
+}
+
+/* St hr */
+hr {
+    border:none;
+    height: 1px;
+    background-color: black;
+    opacity: 20%;
+}
+
+
+/* St box colors */
+.st-box:nth-child(1) {
+    background-color: #3661F2;
+    
+}
+
+.st-box:nth-child(2){
+    background-color: #EEA11D;
+    
+}
+
+.st-box:nth-child(3){
+    background-color: #53AD6A;
+    
+}
+
+.st-box:nth-child(4){
+    background-color: #E62E2D;
+    
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 1700px) {
+    .st-container {
+        flex-direction: column;
+        width: 90%;
+       
+        
+    }
+
+    .st-box {
+        width: 100%;
+        margin-bottom: 20px;
+      
+    }
+}
+
+@media (max-width: 1200px) {
+    .st-container {
+       
+        flex-wrap: wrap;
+        justify-content: center;
+      
+        
+    }
+
+    .st-box {
+        margin: 20px;
+      
+    }
+}
+
+@media (max-width: 800px) {
+    .st-container {
+        
+        width: 100%;
+     
+        
+    }
+
+    .st-box {
+        width: 100%;
+       
+      
+    }
+}
+
+
+
