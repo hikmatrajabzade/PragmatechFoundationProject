@@ -1,0 +1,24 @@
+.az-flag {
+    width: 50%;
+    margin: auto;
+}
+
+.hr1,
+.hr2,
+.hr3 {
+    border: none;
+    height: 100px;
+    margin: 0px;
+}
+
+.hr1 {
+    background-color: rgb(0, 95, 238);
+}
+
+.hr2 {
+    background-color: rgb(238, 0, 0);
+}
+
+.hr3 {
+    background-color: rgb(0, 204, 44);
+}
