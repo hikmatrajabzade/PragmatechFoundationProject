@@ -1,0 +1,107 @@
+/* Container 12 sutundan ibaret grid oldu */
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+
+
+/* shou-biznes setiri max. ehatde edir */
+
+.shou-biznes {
+    grid-column: 1/13;
+}
+
+
+/* lent setiri max. ehate edir */
+
+.lent {
+    grid-column: 1/13;
+}
+
+
+/* yazilari duzgun yerlesdirmek ucun flex edildi (text-align ile de etmek olardi, amma daha az kod yazmaq ucun flex + */
+
+.shou-biznes-item1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* shou-biznes-item2 12 sutundan ibaret grid oldu */
+
+.shou-biznes-item2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+/* boxlarin olculeri verildi */
+
+.shou-biznes-box1 {
+    grid-column: 1 / 4;
+}
+
+
+/* boxlarin olculeri verildi */
+
+.shou-biznes-box2 {
+    grid-column: 4 / 7;
+}
+
+
+/* boxlarin olculeri verildi */
+
+.shou-biznes-box3 {
+    grid-column: 7 / 10;
+}
+
+
+/* boxlarin olculeri verildi */
+
+.shou-biznes-box4 {
+    grid-column: 10 / 13;
+}
+
+
+/* lent 12 sutundan ibaret grid oldu */
+
+.lent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem
+}
+
+
+/* boxlarin olculeri verildi */
+
+.lent-box1 {
+    border: 1px solid red;
+    grid-column: 1 / 5;
+}
+
+
+/* boxlarin olculeri verildi */
+
+.lent-box2 {
+    border: 1px solid red;
+    grid-column: 5 / 9;
+}
+
+
+/* boxlarin olculeri verildi */
+
+.lent-box3 {
+    border: 1px solid red;
+    grid-column: 9 / 13;
+}
+
+.lent-box-item2 {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
