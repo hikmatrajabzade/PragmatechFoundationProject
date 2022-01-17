@@ -1,0 +1,1 @@
+Proyekt sxema: https://prnt.sc/26eijig
