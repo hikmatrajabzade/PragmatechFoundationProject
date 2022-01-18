@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+
+/* ORTAQ CONTAINER */
+.container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ARXA PLAN RENGI VERILDI */
+#navbar {
+    background-color: #292929;
+    color:white;
+    padding: .6rem 0rem;
+}
+
+/* FLEX EDILEREK ORTALANDI */
+.navbar-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+}
+
+/* HAMSI FLEX EDILDI */
+.navbar-content, .navbar-soc, .navbar-logo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+/* LOGO ISHLERI */
+.navbar-logo i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: #0850FC;
+    margin-right: .5rem;
+}
+
+/* LOGONUN SAGINDAKI YAZI ISHLERI */
+.navbar-logo p {
+    font-size: .8rem;
+    color: rgb(214, 213, 213);
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: 1px solid rgb(214, 213, 213);
+    text-transform: uppercase;
+}
+
+/* NAVBAR CONTENTIN SHRIFT OLCUSU DUZELDILI */
+.navbar-content p {
+    font-size: .8rem;
+    color: rgb(214, 213, 213);
+}
+
+/* NAVBAR VAXT DIVI ISHLERI */
+.navbar-date {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color:#ffffff;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: 1px solid rgb(214, 213, 213);
+}
+
+/* NAVBAR-SOC ELEMENTLERININ ORTALANMASI UCUN FLEX */
+.navbar-soc-follow {
+    display: flex;
+    align-items: center;
+}
+
+/* NAVBAR FOLLOW US ISHLERI */
+.navbar-soc-follow span  {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: .8rem;
+    color:#ffffff;
+    margin-right: 1rem;
+  
+
+}
+
+/* NAVBAR ICON TENZIMLENMESI */
+.navbar-soc-follow i {
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8rem;
+    color:#b9bac0;
+    letter-spacing: .6rem;
+}
+
+/* MENU SECTION PADDING */
+#menu {
+    padding: 1.7rem 0rem;
+}
+
+/* MENU CONTAINER VE ICONLARIN ORTALANMASI UCUN */
+.menu-container, .menu-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Menu textlerin flexi */
+.menu-container ul {
+    display: flex;
+}
+
+/* menu textlerin ishleri */
+.menu-container li a {
+    margin-right: 2rem;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* menu icon ishleri */
+.menu-icons i{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    color:#a5a6aa;
+}
+
+
+/* container-categories padding */
+#container-categories {
+    background-color: #F7F7F7;
+    padding: 3rem 0rem;
+}
+
+/* category-item flex edildi */
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:280px;
+  
+}
+
+/* category imglere width  */
+.category-img img  {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+
+/* category-content flex dildi yuxaridan ortalanmaq ucun */
+.category-content {
+    margin-left: 1rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.categories h1, .category-date p{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color:#a5a6aa;
+   
+}
+
+.category-header a {
+    font-size: 1rem;
+    font-weight: 600;
+   
+    color:black;
+    text-decoration: none;
+    position: relative;
+}
+
+.category-header a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top:100%;
+    padding: 0px;
+    border-bottom: 1.4px solid black;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 1s ease;
+  
+
+}
+
+.category-header:hover a::before {
+    transform: scaleX(1);
+}
+
+
+
+.category-date i, .category-date span {
+  font-size: .7rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  color:#a5a6aa;
+}
+
+
+#news-container {
+     padding: 3rem 0rem;
+}
+
+.last-news {
+    background-image: url('../img/5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    height: 450px;
+    border-radius: .3rem;
+    object-fit: cover;
+   
+}
+
+
+.last-other-news {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.last-other-news-item-img img {
+    width: 180px;
+    height: 140px;
+    border-radius: .3rem;
+
+}
+
+.last-other-news-item {
+    display: flex;
+    margin-left:1.2rem;
+
+
+
+}
+
+.last-other-news-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.food {
+    background-color: #FFAF25;
+    border: 1px solid #FFAF25;
+    position: absolute;
+    top:0px;
+}
+
+.technology {
+    background-color: #0073FF;
+    border: 1px solid #0073FF;
+    position: absolute;
+    top:0px;
+}
+
+.travel {
+    background-color: #3DD800;
+    border: 1px solid #3DD800;
+    position: absolute;
+    top:0px;
+}
+
+.btn {
+    padding: .3rem .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    color:white;
+    border-radius: .2rem;
+    text-transform: uppercase;
+  
+    text-decoration: none;
+
+}
+
+.last-other-news-item-header a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.1rem;
+    font-weight: 600;
+ 
+}
+
+.news-date {
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color:#a5a6aa;
+}
+
+.news-date .userblack {
+    color:black;
+}
+
+.last-news {
+    display: flex;
+    align-items: flex-end;
+}
+
+.last-news-content {
+    margin: 0rem 0rem 3rem 3rem;
+    width: 75%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fashion {  
+        background-color: #FF3385;
+        border: 1px solid #FF3385;
+       
+       
+}
+
+.last-news-item-header a {
+    font-size: 2.4rem;
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.last-news-item-date {
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color:#c3c4c9;
+}
+
+.last-news-item-date span {
+    margin-right: .6rem;
+}
+
+.user {
+    color:white;
+}
+
+/* kommentler artirilacaq */
