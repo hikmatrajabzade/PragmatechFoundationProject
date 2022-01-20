@@ -1,0 +1,156 @@
+/* container flex edildi, width verildi */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    
+}
+
+/* header-top ishleri tamamlandi */
+#header-top {
+    background-color: #f8f9f9;
+    color:#2c2c2c;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: .8rem;  
+}
+
+/* header-settings ul flex edildi */
+.header-top-settings ul {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+  
+}
+
+/* header-setting li margin */
+.header-top-settings li {
+    margin-left: 1rem;
+    
+}
+
+/* header-settings linklere reng verildi */
+.header-top-settings a {
+    text-decoration: none;
+    color:#2c2c2c; 
+    font-size: .8rem;  
+}
+
+/* header-settingsde son li'den basqa hamsina sag border verildi */
+.header-top-settings li:not(.launguage) {
+    border-right:1px solid #cccbcb;
+}
+
+.header-top-settings i {
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+/* header-settingsde son i'den basqa hamsina sag margin verildi */
+.header-top-settings i:not(.header-settings .english) {
+    margin-right: 1rem;
+}
+
+/* header-middle ustden-altdan padding */
+#header-middle {
+    padding: 1rem 0rem;
+}
+
+/* head-middle ucun container grid edildi */
+#header-middle .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px;
+    padding: 1.5rem 0rem;
+
+} 
+
+/* header-middle-logo grid ile olcu verildi */
+.header-middle-logo {
+    grid-column: 1/3;   
+}
+
+/* header-middle-serach grid ile olcu verildi ve flex edildi */
+.header-middle-search {
+    grid-column: 4/10;
+    border:1px solid #cccbcb;
+    border-radius: .2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+/* header-middle-search-section a flex edildi yanindaki iconun sagina kecmesi ucun */
+.header-middle-search-section a {
+    display: flex;
+    color:#242424;
+    font-size: .9rem;
+    text-decoration: none;
+    font-family: 'Rubik',sans-serif;
+ }
+
+ .header-middle-search-section a i {
+     margin: .1rem .3rem;
+     font-size: .7rem;
+    
+ }
+
+ /* header-middle-search-section sagdan soldan margin edildi */
+.header-middle-search-section  {
+   margin: 0rem 1rem;
+   
+}
+
+/* header-middle-search input width 100% edildi borderi none edildi */
+.header-middle-search input {
+    width: 100%;
+    padding: .3rem 1.3rem;
+    border:none;
+    outline: none;
+    border-left: 1px solid #cccbcb;
+    font-size: .8rem;
+}
+
+/* header-middle-search-icon (div) height 100% verildi */
+.header-middle-search-icon {
+   height: 100%;
+   background-color: #fed700;
+   border-top-right-radius: .2rem;
+   border-bottom-right-radius: .2rem;
+  
+  
+
+}
+
+/* header-middle-search icon padding edildi rengin boyumesi ucun, ortalanmasi ucun flex edildi */
+.header-middle-search-icon i {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.header-middle-heart-basket-price {
+    grid-column: 10/13;
+    border: 1px solid red;
+}
+
+.header-middle-heart-basket-price {
+    
+}
+
+.header-middle-heart {
+ 
+   
+}
+
+.header-middle-heart i {
+   
+}
+.header-middle-basket-price {
+   
+    
+}
