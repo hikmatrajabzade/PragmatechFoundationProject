@@ -3,3 +3,10 @@
 3. Navbar Menu completed
 4. Slider completed
 5. Product area completed
+6. Static banner completed
+7. Product area 2 completed
+8. Product area 3 completed
+9. Offer banner completed
+10. Product area 4 completed
+11. Product area 5 completed
+
