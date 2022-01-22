@@ -9,4 +9,5 @@
 9. Offer banner completed
 10. Product area 4 completed
 11. Product area 5 completed
+12. Footer completed
 
