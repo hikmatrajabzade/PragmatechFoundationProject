@@ -1,3 +1,7 @@
+/* Rubik import */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
 /* container flex edildi, width verildi */
 
 .container {
@@ -5,6 +9,7 @@
     justify-content: space-between;
     width: 85%;
     margin: auto;
+    font-family: 'Rubik', 'sans-serif';
 }
 
 
@@ -21,9 +26,7 @@
 
 /* Conttacta font verildi */
 
-.header-top-contact {
-    font-family: 'Rubik', sans-serif;
-}
+.header-top-contact {}
 
 
 /* header-settings ul flex edildi */
@@ -118,7 +121,6 @@
     color: #242424;
     font-size: .9rem;
     text-decoration: none;
-    font-family: 'Rubik', sans-serif;
 }
 
 .header-middle-search-section a i {
@@ -216,7 +218,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Rubik', sans-serif;
     font-size: .8rem
 }
 
@@ -273,7 +274,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Rubik', sans-serif;
     font-size: .8rem
 }
 
@@ -300,7 +300,6 @@
 .header-middle-price a {
     display: flex;
     color: #fff;
-    font-family: 'Rubik', sans-serif;
     text-decoration: none;
     font-weight: 600;
     margin-right: 1.3rem;
@@ -315,32 +314,49 @@
     margin-left: .4rem;
 }
 
+
+/* navbar-menuya background verildi  */
+
 #navbar-menu {
     background-color: #fed700;
-    padding: 1.2rem
+    padding: 1.2rem 0rem;
 }
+
+
+/* menu ul  flex edildi */
 
 .menu {
     display: flex;
 }
 
+
+/* menu linkler ishleri */
+
 .menu a {
     text-decoration: none;
     color: #242424;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: .8rem;
 }
+
+
+/* menu hover edildi */
 
 .menu a:hover {
     color: white;
     transition: 500ms;
 }
 
+
+/* menudaki yazilar sagdan margin edildi */
+
 .menu li {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
 }
+
+
+/* menuda ikonlar soldan margin edidli */
 
 .menu i {
     margin-left: .5rem;
@@ -348,7 +364,340 @@
     font-size: .8rem;
 }
 
+
+/* menudaki ikonlar hover edildi */
+
 .menu a:hover i {
     transition: 250ms;
     transform: rotate(180deg);
+}
+
+
+/* slidere ustden altdan padding verildi */
+
+#slider {
+    padding: 1.5rem 0rem;
+}
+
+
+/* slider-center e background img ve width height verildi + grid*/
+
+.slider-center {
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 70%;
+    height: 480px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60px 40% 1fr;
+}
+
+
+/* slider-right'a margin, width ve flex verildi */
+
+.slider-right {
+    width: 30%;
+    margin-left: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* slider-top-bottom-right'a width ve height verildi */
+
+.slider-top-right,
+.slider-bottom-right {
+    width: 100%;
+    height: 230px;
+}
+
+
+/* slider-right imglerine olcu verildi */
+
+.slider-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+/* slider-content'e font weight ve grid olcusu verildi*/
+
+.slider-content {
+    font-weight: 400;
+    grid-column: 2/3;
+}
+
+
+/* slider-content-text h5 font size ve margin bottom verildi */
+
+.slider-content-text h5 {
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+
+
+/* slider-content-text span'a reng verildi */
+
+.slider-content-text span {
+    color: red;
+}
+
+
+/* slider-content-text-h1 font size ve margin bottom verildi */
+
+.slider-content-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+
+/* SUPPORT CLASS */
+
+.big-span {
+    font-size: 2.2rem;
+}
+
+.mn-right-1 {
+    margin-right: 1rem;
+}
+
+.opacity20 {
+    opacity: 20%;
+}
+
+
+/* SUPPORT CLASS */
+
+
+/* slider-content-btn yuxaridan margin verildi */
+
+.slider-content-btn {
+    margin-top: 4rem;
+}
+
+
+/* slider-content-btn a tenzimlemeleri */
+
+.slider-content-btn a {
+    background-color: #fed700;
+    color: black;
+    text-decoration: none;
+    padding: .8rem 1.2rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+/* slider-content-btn a hover edilmesi */
+
+.slider-content-btn a:hover {
+    background-color: #333333;
+    color: white;
+    border: none;
+    transition: 500ms;
+}
+
+
+/* left-arrow'a grid olcusu verildi */
+
+.left-arrow {
+    grid-column: 1/2;
+    font-size: 2.5rem;
+    opacity: 20%;
+    margin-left: .6rem;
+    transform: scale(0);
+    transition: 500ms;
+}
+
+
+/* right-arrow'a grid olcusu verildi */
+
+.right-arrow {
+    grid-column: 4/4;
+    font-size: 2.5rem;
+    opacity: 30%;
+    margin-right: .6rem;
+    transform: scale(0);
+    transition: 500ms;
+}
+
+
+/* slider-center hover edilerken left arrowu goster */
+
+.slider-center:hover .left-arrow {
+    transform: scale(1);
+}
+
+
+/* slider-center hover edilerken right arrowu goster */
+
+.slider-center:hover .right-arrow {
+    transform: scale(1);
+}
+
+
+/* product-area font family ve padding verildi*/
+
+#product-area {
+    font-family: 'Rubik', 'sans-serif';
+    padding: 2rem 0rem;
+}
+
+
+/* product-area-category width verildi ve flex edildi */
+
+.product-area-category {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+/* 
+    prduct area category'da spanin olma sebebi: dizayna gore border-bottom border-righdan arali olmalidir ve uzerine geldikte altina sari xett gelmelidir. Sari xett gelerken ise xettin widh'i textin uzunluguna beraber olmalidir. Span olmadan a'ya padding versek altindan cekilen xett textin uzunlugu + padding'e beraber olardi.
+
+*/
+
+
+/* product-area-category span sagdan padding edildi, border-right ve margin verildi */
+
+.product-area-category span {
+    padding-right: 1.5rem;
+    border-right: 1px solid #e1e1e1;
+    margin: 0rem 1.5rem .5rem 0rem;
+}
+
+
+/* .none-border ile en sonuncu texte sag border verilmedi */
+
+.product-area-category .none-border {
+    border: none
+}
+
+
+/* product-area-category a position relative edildi ve font size verildi */
+
+.product-area-category a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: relative;
+}
+
+
+/* product-area-category a::after yaradildi altindan cixan xett ucun ve gizledildi */
+
+.product-area-category a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.9rem;
+    background-color: #fed700;
+    height: 1px;
+    width: 100%;
+    transform: scale(0);
+}
+
+
+/* product-area-category'nin after'ine hover verildi  gorulmesi ucun (altdan xett) */
+
+.product-area-category a:hover::after {
+    transform: scale(1);
+}
+
+
+/* product-area-category'a hover verildi opacitynin 100% olmagi ucun */
+
+.product-area-category a:hover {
+    opacity: 100%;
+    transition: 500ms;
+}
+
+
+/* product-area-item'in her birinin widthi ekranin 20% ini tutur */
+
+.product-area-item {
+    width: 20%;
+    height: auto;
+}
+
+
+/* product-area-item-image img width 100% edildi */
+
+.product-area-item-image img {
+    width: 100%;
+}
+
+
+/* product-area-item-category flex edildi textler ve ulduzlar yan yana olmasi ucun */
+
+.product-area-item-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* product-area-item-category-title a font size verildi */
+
+.product-area-item-category-title a {
+    color: #a4a4a4;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+
+/* product-area-item-category-stars i font size verildi */
+
+.product-area-item-category-stars i {
+    color: #a4a4a4;
+    font-size: .6rem;
+}
+
+
+/* product-area-item-category-stars .star-color ile elave reng verildi 3 ulduza */
+
+.product-area-item-category-stars .star-color {
+    color: #ffc107
+}
+
+
+/* product-area-item-title asagidan margin verildi */
+
+.product-area-item-title {
+    margin-bottom: 1rem;
+}
+
+
+/* product-area-item-title a font size verildi */
+
+.product-area-item-title a {
+    color: #0363cd;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+
+/* product-area-item-title a hover edildi  */
+
+.product-area-item-title a:hover {
+    text-decoration: underline;
+}
+
+
+/* product-area-item-title h5 font size verildi  */
+
+.product-area-item-price h5 {
+    font-weight: 500;
+    font-size: .9rem;
 }
