@@ -24,12 +24,14 @@ var slider = [{
 
 ]
 
-var index = 0;
-var sliderCount = slider.length;
-// querySelectors();
-// eventListeners();
+var index = 0; // index'in baslangic deyeri
 
+var sliderCount = slider.length; // sliderin uzunlugu (sayi)
 
+var settingsAutoSlider = { // settingsAutoSlider yaradildi - random aktiv passiv etmek ve kecid muddetini tenzilemek ucun
+    random: true,
+    duration: 2000
+}
 
 var slider_center = document.querySelector('#slider_center');
 var product_name = document.querySelector('#product_name');
@@ -40,11 +42,13 @@ var btn_shopping = document.querySelector('#btn_shopping');
 
 var left_arrow = document.querySelector('.left-arrow');
 var right_arrow = document.querySelector('.right-arrow');
+var arrows = document.querySelectorAll('#slider_center');
 
+// event listeners
+eventListeners()
+init();
 
-
-
-
+// showslider func
 function showSlider(i) {
     index = i;
 
@@ -57,29 +61,61 @@ function showSlider(i) {
     btn_shopping.textContent = slider[index].btn;
 }
 
+// init func created - auto slider ucun
+function init() {
 
-left_arrow.addEventListener('click', function(event) {
-    event.preventDefault();
-    index--;
-    if (index < 0) {
-        index = sliderCount - 1;
+    autoSlider = setInterval(function() { // autoSlider - setInterval'in butun deyerlerini atmaq ucun deyisken yaradildi.
+        var prev; // yeni deyisken yaradildi
+        if (settingsAutoSlider.random) {
+            do {
+                prev = index; // yeni deyisken indexin baslangic deyerine sahib oldu
+                index = Math.floor(Math.random() * sliderCount); //random basladi
+
+            } while (index == prev); // dongu basladi - dongu basladiqdan sonra sherti kontrol etdi - indexin son deyeri previn [previn deyeri indexin evvelki deyeridir] deyerine beraberdirse yeni random reqem yaratdi.
+            showSlider(index);
+            console.log(index)
+        }
+    }, settingsAutoSlider.duration);
+}
+
+// eventListeners created - butun eventler ucun
+function eventListeners() {
+
+    // arrows mousenter ve mouseleave
+    arrows.forEach(function(arrows) {
+        arrows.addEventListener('mouseenter', function() {
+            clearInterval(autoSlider)
+        });
+        arrows.addEventListener('mouseleave', function() {
+            init();
+        })
+    })
 
 
-    }
-    showSlider(index);
-    console.log(index);
-});
+    // left arrow click event
+    left_arrow.addEventListener('click', function(event) {
+        event.preventDefault();
+        index--;
+        if (index < 0) { // index eger 0 dan kicik olarsa slider sayindan baslasin
+            index = sliderCount - 1;
 
 
-right_arrow.addEventListener('click', function(event) {
-    event.preventDefault();
-    index++;
+        }
+        showSlider(index);
+        console.log(index);
+    });
 
-    if (index >= sliderCount) {
-        index = 0;
+    // right arrow click event
+    right_arrow.addEventListener('click', function(event) {
+        event.preventDefault();
+        index++;
 
-    }
-    console.log(index);
-    showSlider(index);
+        if (index >= sliderCount) { //index eger slider sayindan boyuk olarsa 0 olsun
+            index = 0;
 
-})
+        }
+        console.log(index);
+        showSlider(index);
+
+    })
+}
