@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
-/* container flex edildi, width verildi */
+/* SUPPORT CLASS */
 
 .container {
     display: flex;
@@ -12,445 +12,6 @@
     font-family: 'Rubik', 'sans-serif';
     color: #242424;
 }
-
-
-/* header-top ishleri tamamlandi */
-
-#header-top {
-    background-color: #f8f9f9;
-    color: #2c2c2c;
-    padding: 1rem 0rem;
-    border-bottom: 1px solid #e1e1e1;
-    font-size: .8rem;
-}
-
-
-/* header-settings ul flex edildi */
-
-.header-top-settings ul {
-    display: flex;
-    font-family: 'Rubik', sans-serif;
-}
-
-
-/* header-setting li margin */
-
-.header-top-settings li {
-    margin-left: 1rem;
-}
-
-
-/* header-settings linklere reng verildi */
-
-.header-top-settings a {
-    text-decoration: none;
-    color: #2c2c2c;
-    font-size: .8rem;
-}
-
-.header-top-settings li a:hover {
-    transition: 500ms;
-    color: #fed700;
-}
-
-
-/* header-settingsde son li'den basqa hamsina sag border verildi */
-
-.header-top-settings li:not(.launguage) {
-    border-right: 1px solid #cccbcb;
-}
-
-.header-top-settings i {
-    font-size: .7rem;
-    font-weight: 400;
-}
-
-
-/* header-settingsde son i'den basqa hamsina sag margin verildi */
-
-.header-top-settings i:not(li .english) {
-    margin-right: 1rem;
-}
-
-
-/* header-middle ustden-altdan padding */
-
-#header-middle {
-    padding: 1rem 0rem;
-}
-
-
-/* head-middle ucun container grid edildi */
-
-#header-middle .container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px;
-    padding: 1.5rem 0rem;
-}
-
-
-/* header-middle-logo grid ile olcu verildi */
-
-.header-middle-logo {
-    grid-column: 1/3;
-}
-
-
-/* header-middle-serach grid ile olcu verildi ve flex edildi */
-
-.header-middle-search {
-    grid-column: 4/10;
-    border: 1px solid #cccbcb;
-    border-right: #fed700;
-    border-radius: .2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* header-middle-search-section a flex edildi yanindaki iconun sagina kecmesi ucun */
-
-.header-middle-search-section a {
-    display: flex;
-    color: #242424;
-    font-size: .9rem;
-    text-decoration: none;
-}
-
-.header-middle-search-section a i {
-    margin: .1rem .3rem;
-    font-size: .7rem;
-}
-
-
-/* header-middle-search-section sagdan soldan margin edildi */
-
-.header-middle-search-section {
-    margin: 0rem 1rem;
-}
-
-
-/* header-middle-search input width 100% edildi borderi none edildi */
-
-.header-middle-search input {
-    width: 100%;
-    padding: .3rem 1.3rem;
-    border: none;
-    outline: none;
-    border-left: 1px solid #cccbcb;
-    font-size: .8rem;
-}
-
-
-/* header-middle-search-icon (div) height 100% verildi */
-
-.header-middle-search-icon {
-    height: 100%;
-    background-color: #fed700;
-    border-top-right-radius: .2rem;
-    border-bottom-right-radius: .2rem;
-    border: 1px solid #fed700;
-}
-
-
-/* header-middle-search-icon hover verildi */
-
-.header-middle-search-icon:hover {
-    background-color: #333333;
-    border: 1px solid #333333;
-    transition: 500ms;
-}
-
-
-/* header-middle-search-icon a hover edildi */
-
-.header-middle-search-icon:hover a {
-    color: white;
-    transition: 500ms;
-}
-
-
-/* header-middle-search icon padding edildi rengin boyumesi ucun, ortalanmasi ucun flex edildi */
-
-.header-middle-search-icon i {
-    padding: 1rem;
-}
-
-
-/* .header-middle-search-icon a font color verildi */
-
-.header-middle-search-icon a {
-    color: black;
-}
-
-
-/* header-middle-heart-basket-price grid column ve flex verildi */
-
-.header-middle-heart-basket-price {
-    grid-column: 10/13;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* heart divine soldan margin verildi */
-
-.header-middle-heart {
-    border: 1px solid #cccbcb;
-    margin-left: 2.5rem;
-    position: relative;
-}
-
-.header-middle-heart span {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    background-color: #fed700;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .8rem
-}
-
-
-/* header-middle-heart hover verildi */
-
-.header-middle-heart:hover {
-    border: 1px solid #fed700;
-    transition: 500ms;
-}
-
-
-/* header-middle-heart i hover edildi */
-
-.header-middle-heart i:hover {
-    color: #fed700;
-    transition: 500ms;
-}
-
-
-/* heart iconuna padding verildi  */
-
-.header-middle-heart i {
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: #242424;
-    font-weight: 200;
-}
-
-.header-middle-heart a {
-    color: black;
-}
-
-
-/* basket ve pricenin oldugu dive width ve flex verildi */
-
-.header-middle-basket-price {
-    background-color: #e80f0f;
-    width: 55%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.header-middle-basket-price span {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    background-color: #fed700;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .8rem
-}
-
-
-/* basket divine border verildi */
-
-.header-middle-basket {
-    border-right: 1px solid #FFFFFF;
-}
-
-
-/* basket iconuna sagdan soldan margin verildi */
-
-.header-middle-basket i {
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin: 0rem .8rem
-}
-
-
-/* price linkine flex verildi sagindaki iconun duzgun oturmasi ucun */
-
-.header-middle-price a {
-    display: flex;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 1.3rem;
-}
-
-
-/* price linkindeki icona bezi deyerler verildi */
-
-.header-middle-price a i {
-    font-size: .7rem;
-    font-weight: 400;
-    margin-left: .4rem;
-}
-
-
-/* navbar-menuya background verildi  */
-
-#navbar-menu {
-    background-color: #fed700;
-    padding: 1.2rem 0rem;
-}
-
-
-/* menu ul  flex edildi */
-
-.menu {
-    display: flex;
-}
-
-
-/* menu linkler ishleri */
-
-.menu a {
-    text-decoration: none;
-    color: #242424;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: .8rem;
-}
-
-
-/* menu hover edildi */
-
-.menu a:hover {
-    color: white;
-    transition: 500ms;
-}
-
-
-/* menudaki yazilar sagdan margin edildi */
-
-.menu li {
-    margin-right: 2rem;
-}
-
-
-/* menuda ikonlar soldan margin edidli */
-
-.menu i {
-    margin-left: .5rem;
-    font-weight: 500;
-    font-size: .8rem;
-}
-
-
-/* menudaki ikonlar hover edildi */
-
-.menu a:hover i {
-    transition: 250ms;
-    transform: rotate(180deg);
-}
-
-
-/* slidere ustden altdan padding verildi */
-
-#slider {
-    padding: 1.5rem 0rem;
-}
-
-
-/* slider-center e background img ve width height verildi + grid*/
-
-.slider-center {
-    background-image: url('../img/2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 70%;
-    height: 480px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 60px 40% 1fr;
-}
-
-
-/* slider-right'a margin, width ve flex verildi */
-
-.slider-right {
-    width: 30%;
-    margin-left: 1.7rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-/* slider-top-bottom-right'a width ve height verildi */
-
-.slider-top-right,
-.slider-bottom-right {
-    width: 100%;
-    height: 230px;
-}
-
-
-/* slider-right imglerine olcu verildi */
-
-.slider-right img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-
-/* slider-content'e font weight ve grid olcusu verildi*/
-
-.slider-content {
-    font-weight: 400;
-    grid-column: 2/3;
-}
-
-
-/* slider-content-text h5 font size ve margin bottom verildi */
-
-.slider-content-text h5 {
-    font-size: 1.2rem;
-    margin-bottom: .8rem;
-}
-
-
-/* slider-content-text span'a reng verildi */
-
-.slider-content-text span {
-    color: red;
-}
-
-
-/* slider-content-text-h1 font size ve margin bottom verildi */
-
-.slider-content-text h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1.2rem;
-}
-
-
-/* SUPPORT CLASS */
 
 .big-span {
     font-size: 2.2rem;
@@ -500,14 +61,342 @@
 /* SUPPORT CLASS */
 
 
-/* slider-content-btn yuxaridan margin verildi */
+/* HEADER-TOP STARTED HERE */
+
+#header-top {
+    background-color: #f8f9f9;
+    color: #2c2c2c;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: .8rem;
+}
+
+.header-top-settings ul {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header-top-settings li {
+    margin-left: 1rem;
+}
+
+.header-top-settings a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: .8rem;
+}
+
+.header-top-settings li a:hover {
+    transition: 500ms;
+    color: #fed700;
+}
+
+.header-top-settings li:not(.launguage) {
+    border-right: 1px solid #cccbcb;
+}
+
+.header-top-settings i {
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+.header-top-settings i:not(li .english) {
+    margin-right: 1rem;
+}
+
+
+/* HEADER-TOP ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* HEADER-MIDDLE STARTED HERE */
+
+#header-middle {
+    padding: 1rem 0rem;
+}
+
+#header-middle .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px;
+    padding: 1.5rem 0rem;
+}
+
+.header-middle-logo {
+    grid-column: 1/3;
+}
+
+.header-middle-search {
+    grid-column: 4/10;
+    border: 1px solid #cccbcb;
+    border-right: #fed700;
+    border-radius: .2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-middle-search-section a {
+    display: flex;
+    color: #242424;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.header-middle-search-section a i {
+    margin: .1rem .3rem;
+    font-size: .7rem;
+}
+
+.header-middle-search-section {
+    margin: 0rem 1rem;
+}
+
+.header-middle-search input {
+    width: 100%;
+    padding: .3rem 1.3rem;
+    border: none;
+    outline: none;
+    border-left: 1px solid #cccbcb;
+    font-size: .8rem;
+}
+
+.header-middle-search-icon {
+    height: 100%;
+    background-color: #fed700;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    border: 1px solid #fed700;
+}
+
+.header-middle-search-icon:hover {
+    background-color: #333333;
+    border: 1px solid #333333;
+    transition: 500ms;
+}
+
+.header-middle-search-icon:hover a {
+    color: white;
+    transition: 500ms;
+}
+
+.header-middle-search-icon i {
+    padding: 1rem;
+}
+
+.header-middle-search-icon a {
+    color: black;
+}
+
+.header-middle-heart-basket-price {
+    grid-column: 10/13;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-middle-heart {
+    border: 1px solid #cccbcb;
+    margin-left: 2.5rem;
+    position: relative;
+}
+
+.header-middle-heart span {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #fed700;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem
+}
+
+.header-middle-heart:hover {
+    border: 1px solid #fed700;
+    transition: 500ms;
+}
+
+.header-middle-heart i:hover {
+    color: #fed700;
+    transition: 500ms;
+}
+
+.header-middle-heart i {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #242424;
+    font-weight: 200;
+}
+
+.header-middle-heart a {
+    color: black;
+}
+
+.header-middle-basket-price {
+    background-color: #e80f0f;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-middle-basket-price span {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #fed700;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem
+}
+
+.header-middle-basket {
+    border-right: 1px solid #FFFFFF;
+}
+
+.header-middle-basket i {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0rem .8rem
+}
+
+.header-middle-price a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 1.3rem;
+}
+
+.header-middle-price a i {
+    font-size: .7rem;
+    font-weight: 400;
+    margin-left: .4rem;
+}
+
+
+/* HEADER-MIDDLE ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* NAVBAR-MENU STARTED HERE */
+
+#navbar-menu {
+    background-color: #fed700;
+    padding: 1.2rem 0rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #242424;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.menu a:hover {
+    color: white;
+    transition: 500ms;
+}
+
+.menu li {
+    margin-right: 2rem;
+}
+
+.menu i {
+    margin-left: .5rem;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.menu a:hover i {
+    transition: 250ms;
+    transform: rotate(180deg);
+}
+
+
+/* NAVBAR-MENU ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* SLIDER STARTED HERE */
+
+#slider {
+    padding: 1.5rem 0rem;
+}
+
+.slider-center {
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 70%;
+    height: 480px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60px 40% 1fr;
+}
+
+.slider-right {
+    width: 30%;
+    margin-left: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider-top-right,
+.slider-bottom-right {
+    width: 100%;
+    height: 230px;
+}
+
+.slider-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider-content {
+    font-weight: 400;
+    grid-column: 2/3;
+}
+
+.slider-content-text h5 {
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+
+.slider-content-text span {
+    color: red;
+}
+
+.slider-content-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
 
 .slider-content-btn {
     margin-top: 4rem;
 }
-
-
-/* slider-content-btn a tenzimlemeleri */
 
 .slider-content-btn a {
     background-color: #fed700;
@@ -519,18 +408,12 @@
     font-weight: 500;
 }
 
-
-/* slider-content-btn a hover edilmesi */
-
 .slider-content-btn a:hover {
     background-color: #333333;
     color: white;
     border: none;
     transition: 500ms;
 }
-
-
-/* left-arrow'a grid olcusu verildi */
 
 .left-arrow {
     grid-column: 1/2;
@@ -541,9 +424,6 @@
     transition: 500ms;
 }
 
-
-/* right-arrow'a grid olcusu verildi */
-
 .right-arrow {
     grid-column: 4/4;
     font-size: 2.5rem;
@@ -553,31 +433,28 @@
     transition: 500ms;
 }
 
-
-/* slider-center hover edilerken left arrowu goster */
-
 .slider-center:hover .left-arrow {
     transform: scale(1);
 }
-
-
-/* slider-center hover edilerken right arrowu goster */
 
 .slider-center:hover .right-arrow {
     transform: scale(1);
 }
 
 
-/* product-area font family ve padding verildi*/
+/* SLIDER ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* PRODUCT-AREA STARTED HERE */
 
 #product-area {
     font-family: 'Rubik', 'sans-serif';
     padding: 2rem 0rem;
     margin: 2rem 0rem;
 }
-
-
-/* product-area-category width verildi ve flex edildi */
 
 .product-area-category {
     width: 85%;
@@ -592,24 +469,15 @@
 
 */
 
-
-/* product-area-category span sagdan padding edildi, border-right ve margin verildi */
-
 .product-area-category span {
     padding-right: 1.5rem;
     border-right: 1px solid #e1e1e1;
     margin: 0rem 1.5rem .5rem 0rem;
 }
 
-
-/* .none-border ile en sonuncu texte sag border verilmedi */
-
 .product-area-category .none-border {
     border: none
 }
-
-
-/* product-area-category a position relative edildi ve font size verildi */
 
 .product-area-category a {
     color: black;
@@ -618,9 +486,6 @@
     font-weight: 500;
     position: relative;
 }
-
-
-/* product-area-category add-border::after yaradildi altindan cixan xett ucun ve gizledildi */
 
 .product-area-category .add-border::after {
     content: '';
@@ -633,9 +498,6 @@
     transform: scale(0);
 }
 
-
-/* .active-border'in hemishe aktiv olmasi ucun */
-
 .product-area-category .active-border::after {
     content: '';
     position: absolute;
@@ -646,39 +508,24 @@
     width: 100%;
 }
 
-
-/* product-area-category'nin after'ine hover verildi  gorulmesi ucun (altdan xett) */
-
 .product-area-category .add-border:hover::after {
     transform: scale(1);
 }
-
-
-/* product-area-category'a hover verildi opacitynin 100% olmagi ucun */
 
 .product-area-category a:hover {
     opacity: 100%;
     transition: 500ms;
 }
 
-
-/* product-area-item'in her birinin widthi ekranin 20% ini tutur */
-
 .product-area-item {
     width: 20%;
     height: 300px;
 }
 
-
-/* product-area-item-image img width 100% edildi */
-
 .product-area-item-image img {
     width: 100%;
     height: 100%;
 }
-
-
-/* product-area-item-category flex edildi textler ve ulduzlar yan yana olmasi ucun */
 
 .product-area-item-category {
     display: flex;
@@ -689,39 +536,24 @@
     margin-bottom: 1rem;
 }
 
-
-/* product-area-item-category-title a font size verildi */
-
 .product-area-item-category-title a {
     color: #a4a4a4;
     font-size: .9rem;
     text-decoration: none;
 }
 
-
-/* product-area-item-category-stars i font size verildi */
-
 .product-area-item-category-stars i {
     color: #a4a4a4;
     font-size: .6rem;
 }
 
-
-/* product-area-item-category-stars .star-color ile elave reng verildi 3 ulduza */
-
 .product-area-item-category-stars .star-color {
     color: #ffc107
 }
 
-
-/* product-area-item-title asagidan margin verildi */
-
 .product-area-item-title {
     margin-bottom: 1rem;
 }
-
-
-/* product-area-item-title a font size verildi */
 
 .product-area-item-title a {
     color: #0363cd;
@@ -730,15 +562,9 @@
     font-size: .9rem;
 }
 
-
-/* product-area-item-title a hover edildi  */
-
 .product-area-item-title a:hover {
     text-decoration: underline;
 }
-
-
-/* product-area-item-title h5 font size verildi  */
 
 .product-area-item-price h5 {
     font-weight: 500;
@@ -746,22 +572,22 @@
 }
 
 
-/* static-banner'e yuxaridan asagidan padding */
+/* PRODUCT-AREA ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* STATIC-BANNER STARTED HERE */
 
 #static-banner {
     padding: 2rem 0rem;
 }
 
-
-/* static-banner-item'lere width height deyeri */
-
 .static-banner-item {
     width: 33.33%;
     height: 230px;
 }
-
-
-/* static-banner-item img'lara olcular */
 
 .static-banner-item img {
     width: 100%;
@@ -769,7 +595,13 @@
 }
 
 
-/* product-area-category2 justify content verildi*/
+/* STATIC-BANNER STARTED HERE */
+
+
+/* ------------------ */
+
+
+/* PRODUCT-AREA-CATEGORY2 STARTED HERE */
 
 .product-area-category2 {
     width: 85%;
@@ -780,9 +612,6 @@
     padding-bottom: .7rem;
 }
 
-
-/* product-area-category-left span font size ve position relative */
-
 .product-area-category-left span {
     color: black;
     text-decoration: none;
@@ -791,9 +620,6 @@
     font-weight: 500;
 }
 
-
-/* product-area-category-right a position relative ve font size */
-
 .product-area-category-right a {
     color: #a4a4a4;
     text-decoration: none;
@@ -801,9 +627,6 @@
     font-size: .9rem;
     font-weight: 400;
 }
-
-
-/* product-area-category-left span::after altina xett ucun */
 
 .product-area-category-left span::after {
     content: '';
@@ -814,9 +637,6 @@
     height: 1px;
     width: 100%;
 }
-
-
-/* product-area-category-right span::after altina xett ucun */
 
 .product-area-category-right a::after {
     content: '';
@@ -829,23 +649,23 @@
     transform: scale(0);
 }
 
-
-/* .product-area-category-right a hover edildi */
-
 .product-area-category-right a:hover {
     color: black;
     transition: 500ms;
 }
-
-
-/* product-area-category-right ustune gelende gorunmesi ucun */
 
 .product-area-category-right a:hover::after {
     transform: scale(1);
 }
 
 
-/* #offer-banner .container background image verildi */
+/* PRODUCT-AREA-CATEGORY2 ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* OFFER-BANNER STARTED HERE */
 
 #offer-banner .container {
     height: 400px;
@@ -855,22 +675,22 @@
     align-items: center;
 }
 
-
-/* offer-banner-content soldan margin */
-
 .offer-banner-content {
     margin-left: 3rem;
 }
-
-
-/* offer-banner-content .slider-content-text icindeki yazinin olcusu verildi */
 
 .offer-banner-content .slider-content-text {
     width: 60%;
 }
 
 
-/* #footer background color ve padding verildi */
+/* OFFER-BANNER ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* FOOTER STARTED HERE */
 
 #footer {
     background-color: #f7f7f7;
@@ -878,32 +698,20 @@
     padding: 3rem 0rem;
 }
 
-
-/* footerdeki butun a'lara hover verildi */
-
 #footer a:hover {
     color: black;
     text-decoration: underline;
     transition: 500ms;
 }
 
-
-/* footerdeki cointainerin flex direcitonu column edildi */
-
 #footer .container {
     flex-direction: column;
 }
-
-
-/* footer-top flex edildi */
 
 .footer-top {
     display: flex;
     justify-content: space-between;
 }
-
-
-/* footer-top-item'lere width verildi */
 
 .footer-top-item {
     width: 25%;
@@ -912,25 +720,16 @@
     padding: 1rem
 }
 
-
-/* footer-top-item h1 yuxaridan margin verildi */
-
 .footer-top-item h1 {
     font-weight: 500;
     margin: 1rem 0rem;
 }
-
-
-/* footer-top-item p'lere asagidan margin ve font size verildi */
 
 .footer-top-item p {
     color: #888;
     font-size: .9rem;
     margin-bottom: 3rem;
 }
-
-
-/* footer-middle yuxaridan margin verildi ve display flex edildi */
 
 .footer-middle {
     display: flex;
@@ -940,40 +739,25 @@
     border-bottom: 1px dashed #e1e1e1;
 }
 
-
-/* footer-middle li font size ve yuxaridan margin verildi */
-
 .footer-middle li {
     font-size: .9rem;
     color: #888;
     margin-top: 1.3rem;
 }
 
-
-/* footer-middle h1 font size ve font weight verildi */
-
 .footer-middle h1 {
     font-weight: 500;
     font-size: 1.2rem;
 }
-
-
-/* footer-middle a color verildi ve altdan xetti silindi */
 
 .footer-middle a {
     color: #888;
     text-decoration: none;
 }
 
-
-/* footer-middle-item-about-desc b elementleri bold edildi [css reset aktiv oldugu ucun]  */
-
 .footer-middle-item-about-desc b {
     font-weight: 500;
 }
-
-
-/*  footer-middle-item-soc flex edildi ve font size verildi */
 
 .footer-middle-item-soc {
     display: flex;
@@ -981,15 +765,9 @@
     font-size: 2.5rem;
 }
 
-
-/* footer-middle-item-soc i yuxaridan asagidan margin verildi */
-
 .footer-middle-item-soc i {
     margin: 1.3rem 0rem;
 }
-
-
-/* footer-middle-item-sub flex edildi ve yuxaridan asagidan margin verildi */
 
 .footer-middle-item-sub {
     display: flex;
@@ -997,9 +775,6 @@
     align-items: center;
     margin: 1.3rem 0rem;
 }
-
-
-/* footer-middle-item-sub input ishleri */
 
 .footer-middle-item-sub input {
     width: 70%;
@@ -1012,9 +787,6 @@
     border-right: none;
     outline: none;
 }
-
-
-/* footer-middle-item-sub button ishleri */
 
 .footer-middle-item-sub button {
     width: 30%;
@@ -1035,9 +807,6 @@
     cursor: pointer;
 }
 
-
-/* footer-middle-item-sub input hover edilid */
-
 .footer-middle-item-sub button:hover {
     background-color: #333333;
     border-top: 1px solid #333333;
@@ -1047,9 +816,6 @@
     color: white;
 }
 
-
-/* footer-bottom flex edldi ve yuxaridan asagidan padding verildi */
-
 .footer-bottom {
     padding: 2.5rem 0rem;
     display: flex;
@@ -1058,38 +824,32 @@
     color: #888;
 }
 
-
-/* footer-bottom-menu'a width verildi */
-
 .footer-bottom-menu {
     width: 90%;
     text-align: center;
 }
 
-
-/* footer-bottom-menu li display inline edildi */
-
 .footer-bottom-menu li {
     display: inline;
 }
-
-
-/* footer-bottom a color verildi  */
 
 .footer-bottom a {
     color: #888;
     text-decoration: none;
 }
 
-
-/* footer-bottom-payment-methods yuxaridan asagidan margin verildi */
-
 .footer-bottom-payment-methods {
     margin: 1.5rem 0rem;
 }
 
 
-/* ------------------------ */
+/* FOOTER ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* CATEGORY AREA STARTED HERE */
 
 #category-area {
     background-color: #f9f9f9;
@@ -1119,7 +879,13 @@
 }
 
 
-/* ------------------------ */
+/* CATEGORY AREA ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* OFFER-BANNER STARTED HERE */
 
 #offer-banner-category {
     margin: 3.5rem 0rem 1rem 0rem;
@@ -1138,7 +904,13 @@
 }
 
 
-/* ----------------------------- */
+/* OFFER-BANNER ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* SORT-AREA-CATEGORY STARTED HERE */
 
 #sort-area-category {
     margin: 1rem 0rem;
@@ -1193,6 +965,15 @@
     cursor: pointer;
 }
 
+
+/* SORT-AREA-CATEGORY ENDED HERE */
+
+
+/* ------------------ */
+
+
+/* PRODUCT-AREA-CATEGORY-PAGE STARTED HERE */
+
 #product-area-category-page {
     font-family: 'Rubik', 'sans-serif';
     padding: 2rem 0rem;
@@ -1239,3 +1020,9 @@
     color: #ffc107;
     transition: 500ms;
 }
+
+
+/* PRODUCT-AREA-CATEGORY-PAGE ENDED HERE */
+
+
+/* ------------------ */
