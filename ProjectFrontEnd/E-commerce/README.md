@@ -10,4 +10,6 @@
 10. Product area 4 completed
 11. Product area 5 completed
 12. Footer completed
+13. Category completed
+14. Product completed
 
