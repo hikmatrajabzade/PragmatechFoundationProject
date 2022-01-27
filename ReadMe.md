@@ -1,6 +1,6 @@
 <h1>Hikmat Rajabli</h1>
 
-<p>Haqqımda qısa məlumat</p>
+<h3>Haqqımda qısa məlumat</h3>
 
 * Tədrisə başladığım tarix : 27 Dekabr 2021
 * Tədrisi başa vurduğum tarix : x
