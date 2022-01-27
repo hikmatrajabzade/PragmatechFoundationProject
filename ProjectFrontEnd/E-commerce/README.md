@@ -12,4 +12,5 @@
 12. Footer completed
 13. Category completed
 14. Product completed
+15. Dropdown menu completed
 
