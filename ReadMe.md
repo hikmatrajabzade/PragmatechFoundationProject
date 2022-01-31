@@ -8,5 +8,5 @@
 ### Tədris müddətində gördüyüm işlər
 - E-commerce 01
     - [Kodlar](https://github.com/hikmatrajabzade/PragmatechFoundationProject/tree/main/ProjectFrontEnd/E-commerce)
-    - işdə istifadə olunan texnologiyalar : HTML/CSS/JS
+    - İşdə istifadə olunan texnologiyalar : HTML/CSS/JS
     - İşin bitmə müddəti : Davam edir...
